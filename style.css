@@ -1,0 +1,272 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.caja{
+    position: relative;
+    margin: 0 auto;
+    width: 100% ;
+    height: 202px;
+}
+nav{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+.logo{
+    margin-left: 5%;
+    width: 140px;
+    transition: 0.5s transform;
+}
+.logo:hover{
+    transform: scale(1.06);
+    border-bottom: 2px solid #c78c19;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c78c19;
+}
+.productos {
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 290px;
+    /* vertical-align: top; */
+    margin: 4% 1.5%;
+    padding: 2% 1%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.productos li:hover{
+    border-color: #c78c19;
+}
+.productos li:hover h2{
+    font-size: 33px;
+}
+.productos li:active{
+    border-color: #088c19;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.contacto{
+    margin-left: 10%;
+    display: block;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+}
+.titulo{
+    font-size: 35px;
+
+}
+form{
+    width: 100%;
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 10px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #c78c19;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: #a2700b;
+    transform: scale(1.06);
+}
+table{
+    margin: 40px;
+}
+thead{
+    background-color: #c78c19;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/*CSS para index*/
+
+.banner{
+    width: 100%;
+}
+.principal{
+    background: #FEFEFE;
+    width: 80%;
+    margin: 0 auto;
+}
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+.mapaContenido{
+    width: 80%;
+    margin: 0 auto;
+}
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+}
+.contenidoDiferenciales{
+    width: 60%;
+    height: 35%;
+    margin: 5% auto;
+}
+.listaDiferenciales{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.items{
+    line-height: 1.5;
+}
+.items::before{
+    content: "★";
+}
+.items:first-child{
+    font-weight: bold;
+}
+.imagenDiferenciales{
+    width: 40%;
+    margin-left: 10%;
+    transition: 400ms;
+    box-shadow: 10px 10px 50px 15px black;
+}
+.imagenDiferenciales:hover{
+    opacity: 0.3;
+}
+.video{
+    width: 41.5%;
+    margin: 1em auto;
+}
+
+
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+    .logo{
+        width: auto;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video{
+        width: auto;
+        height: auto;
+    }
+    .listaDiferenciales, .imagenDiferenciales{
+        width: 100%;
+    }
+    .imagenDiferenciales{
+        margin-left: 0;
+    }
+    .productos li{
+        width: 100%;
+        margin: 4% 0;
+    }
+    .imagenProductos{
+        width: 80%;
+    }
+    .contacto{
+        margin-left: 50%;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .formulario{
+        display: flex;
+        margin-left: 500px;
+        width: 100%;
+    }
+    header, .footer{
+        width: auto;
+    }
+}
